@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dawid Dadas">
+        <meta name="creation_date">
+        <meta name="keywords" content="Miasto, Miasta, Rzym">
+        <link rel="stylesheet" href="sylesheet.css">
+    <title>7 cudów świata</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Strona Główna</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="formularz.html">Ankieta</a>
+      </div>
+    
+      <div id="glowne">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="z">&#9776;</span>
+      </div>
+    
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+    
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    
+      }
+      </script>
+    <header>
+        <h1>
+            <span class="bounce" style="--i:1">7</span>
+            <span class="bounce" style="--i:2"> </span>
+            <span class="bounce" style="--i:3">C</span>
+            <span class="bounce" style="--i:4">u</span>
+            <span class="bounce" style="--i:5">d</span>
+            <span class="bounce" style="--i:6">ó</span>
+            <span class="bounce" style="--i:7">w</span>
+            <span class="bounce" style="--i:8"> </span>
+            <span class="bounce" style="--i:9">Ś</span>
+            <span class="bounce" style="--i:10">w</span>
+            <span class="bounce" style="--i:11">i</span>
+            <span class="bounce" style="--i:12">a</span>
+            <span class="bounce" style="--i:13">t</span>
+            <span class="bounce" style="--i:14">a</span>
+        </h1>
+    </header>
+    <main>
+
+
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Strona Główna</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="formularz.html">Ankieta</a>
+            <a href="multimedia.html">Multimedia</a>
+          </div>
+        
+
+
+
+    
+    
+          <script>
+            function myFunction(imgs) {
+      // Get the expanded image
+      var expandImg = document.getElementById("expandedImg");
+      // Get the image text
+      var imgText = document.getElementById("imgtext");
+      // Use the same src in the expanded image as the image being clicked on from the grid
+      expandImg.src = imgs.src;
+      // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    
+      // Show the container element (hidden with CSS)
+      expandImg.parentElement.style.display = "block";
+    }
+          </script>
+    
+    <br>
+        <h1>Galeria</h1>
+        <div class="row">
+            <div class="column">
+              <img src="foto/kolos.jpg" alt="kolos" onclick="myFunction(this);" class="zdjecie" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="column">
+              <img src="foto/latarnia.jpg" alt="latrania" onclick="myFunction(this);" class="zdjecie" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="column">
+              <img src="foto/mauzoleum.jpg" alt="mauzoleum" onclick="myFunction(this);" class="zdjecie" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="column">
+              <img src="foto/ogrody.jpg" alt="ogrody" onclick="myFunction(this);" class="zdjecie" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="column">
+                <img src="foto/piramida.jpg" alt="piramida" onclick="myFunction(this);" class="zdjecie" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="column">
+                <img src="foto/swiatynia.jpg" alt="swiatynia" onclick="myFunction(this);" class="zdjecie" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="column">
+                <img src="foto/zeus.jpg" alt="Zeus" onclick="myFunction(this);" class="zdjecie" style="max-width: 100%; height: auto;">
+              </div>
+              <div class="column">
+                <img src="foto/kolos2.jpg" alt="Zeus" onclick="myFunction(this);" class="zdjecie" style="max-width: 100%; height: auto;">
+              </div>
+          </div>
+          
+
+
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          
+            <img id="expandedImg" style="height:100%">
+          
+            <div id="imgtext"></div>
+          </div>
+
+
+    </main>
+    <footer>Autor strony: Dawid Dadas 2TB gr. 1</footer>
+</body>
+</html>

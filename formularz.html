@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dawid Dadas">
+        <meta name="creation_date">
+        <meta name="keywords" content="Miasto, Miasta, Rzym">
+        <link rel="stylesheet" href="sylesheet.css">
+    <title>7 Cudów świata</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Strona Główna</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="formularz.html">Ankieta</a>
+      </div>
+    
+      <div id="glowne">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="z">&#9776;</span>
+      </div>
+    
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+    
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    
+      }
+      </script>
+    <header>
+        <h1>
+            <span class="bounce" style="--i:1">7</span>
+            <span class="bounce" style="--i:2"> </span>
+            <span class="bounce" style="--i:3">C</span>
+            <span class="bounce" style="--i:4">u</span>
+            <span class="bounce" style="--i:5">d</span>
+            <span class="bounce" style="--i:6">ó</span>
+            <span class="bounce" style="--i:7">w</span>
+            <span class="bounce" style="--i:8"> </span>
+            <span class="bounce" style="--i:9">Ś</span>
+            <span class="bounce" style="--i:10">w</span>
+            <span class="bounce" style="--i:11">i</span>
+            <span class="bounce" style="--i:12">a</span>
+            <span class="bounce" style="--i:13">t</span>
+            <span class="bounce" style="--i:14">a</span>
+        </h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form action="mailto:iHateNiggers" method="POST" class="form-content">
+                <h2 class="form-title">Zarejestruj się</h2>
+                
+                <label for="name" class="form-label">Imię</label>
+                <input type="text" id="name" name="name" required class="form-input">
+                
+                <label for="s_name" class="form-label">Nazwisko</label>
+                <input type="text" id="name" name="name" required class="form-input">
+                
+                
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" name="email" required class="form-input">
+    
+                <label for="age" class="form-label">Twój wiek:</label>
+                <input type="number" id="age" name="age" required min="16" class="form-input">
+                
+                <label for="password" class="form-label">Hasło</label>
+                <input type="password" id="password" name="password" required class="form-input">
+
+            <br><br>
+
+                
+                <button type="submit" class="form-button">Zarejestruj się</button>
+            <br><br>
+                <label for="visited" class="form-label">Czy odwiedziłeś, któryś z tych zabytków?</label>
+                <select id="visited" name="visited" required class="form-input">
+                    <option value="">Wybierz</option>
+                    <option value="tak">Tak</option>
+                    <option value="nie">Nie</option>
+                </select>
+        <br><br>
+                <label for="rating" class="form-label">Jak bardzo ci się podobała strona?</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" class="form-slider">
+        <br><br>
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">Który z zabytków chciałbyś najbardziej odwiedzić? (zaznacz wszystkie, które chcesz)</legend>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="copacabana" name="attractions" value="Copacabana" class="form-checkbox">
+                        <label for="copacabana" class="form-checkbox-label">Kolos Rodyjski z Rodos</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="sugarloaf" name="attractions" value="Góra Cukrowa" class="form-checkbox">
+                        <label for="sugarloaf" class="form-checkbox-label">Piramida Cheopsa w Gizie</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="christ" name="attractions" value="Chrystus Odkupiciel" class="form-checkbox">
+                        <label for="christ" class="form-checkbox-label">Posąg Zeusa w Olimpii</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="botanical" name="attractions" value="Ogród Botaniczny" class="form-checkbox">
+                        <label for="botanical" class="form-checkbox-label">Wiszące ogrody Semiramidy w Babilonie</label>
+                    </div>
+                </fieldset>
+        
+                <label for="opinion" class="form-label">Co, twoim zdaniem, powinno być 8. cudem świata?</label>
+                <textarea id="opinion" name="opinion" rows="4" placeholder="Podziel się swoją opinią..." class="form-textarea"></textarea>
+                <div>
+                    <br><br>
+                    <button type="reset" class="form-button">Wyczść</button>
+                    <hr>
+                    <button type="submit" class="form-button">Wyślij ankietę</button>
+                    
+                </div>
+            </form>
+    </main>
+    <footer>Autor strony: Dawid Dadas 2TB gr. 1</footer>
+</body>
+</html>
